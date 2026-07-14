@@ -1,18 +1,20 @@
-# Concrete Compressive Strength Data Analysis
+# Concrete Compressive Strength Regression Analysis
 
 ## Project Objective
-This project analyzes concrete mixture formulations to understand how different components (such as cement, water, and fly ash) and curing duration affect compressive strength. The goal is to provide data-driven insights that optimize mixture design for maximum structural performance.
+This project applies statistical modeling to analyze concrete mixture formulations. By leveraging multiple linear regression, the analysis quantifies how individual components and curing age predict ultimate concrete compressive strength.
+
+## Statistical Framework & Model Performance
+Using Microsoft Excel's Data Analysis Toolpak, a multiple linear regression model was built across **1,030 unique material observations**:
+* **Model Fit (R-Square):** `0.6155` (61.5% of the variance in concrete strength is explained by the independent variables)
+* **Adjusted R-Square:** `0.6125`
+* **Standard Error:** `10.399`
+* **Model Significance (Significance F):** `6.286E-206` (Indicates an extremely high level of statistical significance)
 
 ## Methodology & Tools Used
-* **Data Source:** Concrete Compressive Strength Dataset
-* **Tools:** Microsoft Excel (Data cleaning, statistical analysis, and visualization)
-* **Deliverables:** Structured data cleaning alongside an executive analysis report
+* **Data Source:** Concrete Compressive Strength Dataset (1,030 samples)
+* **Tools:** Microsoft Excel (Descriptive Statistics, ANOVA, Multiple Linear Regression Modeling)
+* **Deliverables:** Structured statistical workspace alongside an executive analysis report
 
 ## Project Files
-* **`concrete_data`**: The core dataset containing raw and cleaned material metrics used for the analysis.
+* **`concrete_data.csv`**: Excel sheet containing the raw data, regression statistics, and ANOVA summary output.
 * **`BhaweshAgarwal_Concrete_Analytics_Report.pdf`**: The final executive report detailing visual charts, key findings, and data-backed recommendations.
-
-## Key Insights From the Analysis
-* **Cement Component:** Acts as the primary driver of concrete strength, showing a strong positive correlation across testing phases.
-* **Water-to-Cement Ratio:** Higher water content relative to cement systematically decreases structural integrity.
-* **Curing Timeline:** Compressive strength accelerates rapidly up to the 28-day mark before plateauing.
